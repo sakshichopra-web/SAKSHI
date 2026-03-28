@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loan Services — Dhanshri Financial Solution Pvt. Ltd.</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="dfslogo.png" alt="DFS Logo" onerror="this.style.display='none'"/>
+    <div class="nav-logo-text">
+      <span class="brand">Dhanshri Financial</span>
+      <span class="tagline">Your Trusted Partner Since 2004</span>
+    </div>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="investment.html">Investments</a>
+    <a href="insurance.html">Insurance</a>
+    <a href="loans.html" class="active">Loans</a>
+    <a href="contact.html" class="nav-cta">Get in Touch</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Loan Services</div>
+    <h1>"Your Dreams Are Valid.<br/><em style="font-style:italic; color: var(--blue-mid);">We Make Them Possible."</em></h1>
+    <p>Quick, easy, and hassle-free loans at the best interest rates. Home Loan, Personal Loan, Business Loan, Car Loan & more — with end-to-end guidance from application to disbursement.</p>
+    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+      <a href="contact.html" class="btn-primary">Apply for Loan Now →</a>
+      <a href="#emi-section" class="btn-secondary">Calculate EMI</a>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-item"><span class="icon">🏦</span> 250+ Banking & NBFC Partners</div>
+  <div class="trust-item"><span class="icon">💰</span> Lowest Interest Rates</div>
+  <div class="trust-item"><span class="icon">⚡</span> Fast Processing & Quick Disbursement</div>
+  <div class="trust-item"><span class="icon">✅</span> High Approval Rate</div>
+  <div class="trust-item"><span class="icon">🤝</span> Free Advisory Service</div>
+</div>
+
+<!-- WHY CHOOSE US FOR LOANS -->
+<section style="background: var(--white);">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+    <div>
+      <span class="section-label">About Our Loan Services</span>
+      <h2 class="section-title">Loans Made Simple, Fast & Affordable</h2>
+      <p style="color: var(--text-mid); font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        At Dhanshri Financial Solutions Pvt. Ltd., we understand that every individual and business has unique financial needs. Whether you are planning to buy your dream home, expand your business, purchase a vehicle, fund your child's education, or meet any urgent personal expense — we are here to make your loan journey smooth, transparent, and stress-free.
+      </p>
+      <p style="color: var(--text-mid); font-size: 16px; line-height: 1.8; margin-bottom: 28px;">
+        As an authorised Loan Distribution Partner, we work with India's leading banks, NBFCs, and financial institutions to bring you the best loan products at competitive interest rates with minimal documentation and faster approvals.
+      </p>
+      <p style="color: var(--blue-mid); font-size: 16px; font-style: italic; font-family: var(--font-display); padding: 16px 20px; border-left: 3px solid var(--blue-pale); background: var(--blue-frost); border-radius: 0 10px 10px 0;">
+        "We do not just process loans — we guide you, advise you, and stand by you from the first application to the final disbursement."
+      </p>
+    </div>
+    <div class="why-grid" style="display: flex; flex-direction: column; gap: 14px;">
+      <div class="why-item">
+        <div class="why-icon">🏦</div>
+        <div class="why-text">
+          <h4>Multiple Lender Options</h4>
+          <p>We work with 250+ leading banks and NBFCs to find you the absolute best deal for your needs.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">💰</div>
+        <div class="why-text">
+          <h4>Lowest Interest Rates</h4>
+          <p>We compare and negotiate on your behalf across our extensive lender network to get you the best rate.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">📋</div>
+        <div class="why-text">
+          <h4>Minimal Documentation</h4>
+          <p>We guide you on exactly what's needed — no unnecessary paperwork, no confusion.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">⚡</div>
+        <div class="why-text">
+          <h4>Fast Processing</h4>
+          <p>Time is money. Our expertise ensures speedy approvals and quick disbursements.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🤝</div>
+        <div class="why-text">
+          <h4>Free Advisory Service</h4>
+          <p>Our loan counselling is absolutely free of cost. We earn when you get the right loan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOAN PRODUCTS -->
+<section style="background: var(--surface);">
+  <div class="section-header-center">
+    <span class="section-label">Our Loan Products</span>
+    <h2 class="section-title">Loan Solutions for Every Need</h2>
+    <p class="section-sub">From buying a home to growing a business — we have a loan solution that fits your unique situation and financial profile.</p>
+  </div>
+  <div class="cards-grid cards-3">
+    <div class="card">
+      <div class="card-icon">🏠</div>
+      <h3>Home Loan</h3>
+      <p style="margin-bottom: 14px;">A home is not just a building — it is where memories are made. Our Home Loan services help you purchase, construct, or renovate your dream home at the most affordable rates.</p>
+      <div style="background: var(--blue-frost); border-radius: 10px; padding: 14px 16px; margin-bottom: 14px;">
+        <div style="font-size: 12px; font-weight: 600; color: var(--text-mid); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px;">Key Features</div>
+        <ul class="service-list">
+          <li>Tenure up to 30 years</li>
+          <li>For salaried and self-employed</li>
+          <li>Purchase, construction, renovation</li>
+          <li>Balance transfer facility available</li>
+        </ul>
+      </div>
+      <a href="contact.html" class="card-link">Apply for Home Loan →</a>
+    </div>
+    <div class="card">
+      <div class="card-icon">🏗️</div>
+      <h3>Loan Against Property (LAP)</h3>
+      <p style="margin-bottom: 14px;">Unlock the value of your property without selling it. Meet large financial requirements — business expansion, medical emergencies, education — using your property as collateral.</p>
+      <div style="background: var(--blue-frost); border-radius: 10px; padding: 14px 16px; margin-bottom: 14px;">
+        <div style="font-size: 12px; font-weight: 600; color: var(--text-mid); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px;">Key Features</div>
+        <ul class="service-list">
+          <li>Loan up to 70% of property value</li>
+          <li>Tenure up to 15 years</li>
+          <li>Residential & commercial property</li>
+          <li>Salaried & self-employed eligible</li>
+        </ul>
+      </div>
+      <a href="contact.html" class="card-link">Apply for LAP →</a>
+    </div>
+    <div class="card">
+      <div class="card-icon">💼</div>
+      <h3>Business Loan</h3>
+      <p style="margin-bottom: 14px;">Whether starting a new venture or scaling an existing one, our Business Loan solutions provide the financial boost you need — quickly and without unnecessary complications.</p>
+      <div style="background: var(--blue-frost); border-radius: 10px; padding: 14px 16px; margin-bottom: 14px;">
+        <div style="font-size: 12px; font-weight: 600; color: var(--text-mid); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px;">Key Features</div>
+        <ul class="service-list">
+          <li>Collateral-free loans available</li>
+          <li>Tenure 12 to 60 months</li>
+          <li>Working capital, machinery, expansion</li>
+          <li>Traders, Retailers, Manufacturers</li>
+        </ul>
+      </div>
+      <a href="contact.html" class="card-link">Apply for Business Loan →</a>
+    </div>
+    <div class="card">
+      <div class="card-icon">👤</div>
+      <h3>Personal Loan</h3>
+      <p style="margin-bottom: 14px;">For any personal financial need — a wedding, a medical emergency, travel, or home renovation — get quick unsecured personal loans without pledging any assets.</p>
+      <div style="background: var(--blue-frost); border-radius: 10px; padding: 14px 16px; margin-bottom: 14px;">
+        <div style="font-size: 12px; font-weight: 600; color: var(--text-mid); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px;">Key Features</div>
+        <ul class="service-list">
+          <li>No collateral required</li>
+          <li>Quick approval and disbursal</li>
+          <li>Flexible repayment terms</li>
+          <li>Competitive interest rates</li>
+        </ul>
+      </div>
+      <a href="contact.html" class="card-link">Apply for Personal Loan →</a>
+    </div>
+    <div class="card">
+      <div class="card-icon">🚗</div>
+      <h3>Car Loan</h3>
+      <p style="margin-bottom: 14px;">Drive your dream car today. We help you get the best car loan offers from leading banks and NBFCs at attractive interest rates with minimal paperwork.</p>
+      <div style="background: var(--blue-frost); border-radius: 10px; padding: 14px 16px; margin-bottom: 14px;">
+        <div style="font-size: 12px; font-weight: 600; color: var(--text-mid); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px;">Key Features</div>
+        <ul class="service-list">
+          <li>New & used car financing</li>
+          <li>Up to 100% on-road price</li>
+          <li>Flexible tenure options</li>
+          <li>Pre-approved loan options</li>
+        </ul>
+      </div>
+      <a href="contact.html" class="card-link">Apply for Car Loan →</a>
+    </div>
+    <div class="card">
+      <div class="card-icon">🎓</div>
+      <h3>Education Loan</h3>
+      <p style="margin-bottom: 14px;">Invest in your future. We help students secure education loans for premier institutions in India and abroad — covering tuition, living expenses, and more.</p>
+      <div style="background: var(--blue-frost); border-radius: 10px; padding: 14px 16px; margin-bottom: 14px;">
+        <div style="font-size: 12px; font-weight: 600; color: var(--text-mid); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px;">Courses Covered</div>
+        <ul class="service-list">
+          <li>Engineering, Medical, MBA, Law</li>
+          <li>Professional courses: CA, CS, CFA</li>
+          <li>International education: USA, UK, Canada</li>
+          <li>Australia & more</li>
+        </ul>
+      </div>
+      <a href="contact.html" class="card-link">Apply for Education Loan →</a>
+    </div>
+  </div>
+  <!-- Balance Transfer -->
+  <div class="highlight-box">
+    <div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
+      <div style="font-size: 48px; line-height: 1;">🔄</div>
+      <div>
+        <h3>Loan Balance Transfer — Already Have a Loan? Save More.</h3>
+        <p style="margin-bottom: 20px;">If you are currently paying a high interest rate on your existing loan, transfer your outstanding balance to a lender with a lower rate and significantly reduce your EMI burden.</p>
+        <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--blue-mid); font-weight: 500;"><span>✓</span> Lower interest rate</div>
+          <div style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--blue-mid); font-weight: 500;"><span>✓</span> Reduced monthly EMI</div>
+          <div style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--blue-mid); font-weight: 500;"><span>✓</span> Top-up loan facility</div>
+          <div style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--blue-mid); font-weight: 500;"><span>✓</span> Simple & quick process</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMI CALCULATOR -->
+<section id="emi-section" style="background: var(--white);">
+  <div class="section-header-center">
+    <span class="section-label">EMI Calculator</span>
+    <h2 class="section-title">Calculate Your Loan EMI</h2>
+    <p class="section-sub">Enter your loan details to instantly estimate your monthly repayment. Or refer to our sample EMI table below.</p>
+  </div>
+
+  <!-- Interactive EMI Calculator -->
+  <div style="max-width: 700px; margin: 0 auto 56px; background: var(--blue-frost); border: 1px solid var(--blue-mist); border-radius: var(--radius-lg); padding: 40px;">
+    <h4 style="font-family: var(--font-display); font-size: 22px; color: var(--blue-deep); margin-bottom: 24px;">EMI Calculator</h4>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Loan Amount (₹)</label>
+        <input type="number" id="loanAmt" placeholder="e.g. 2500000" oninput="calcEMI()" style="background: white;"/>
+      </div>
+      <div class="form-group">
+        <label>Interest Rate (% p.a.)</label>
+        <input type="number" id="intRate" placeholder="e.g. 8.5" step="0.1" oninput="calcEMI()" style="background: white;"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Loan Tenure (Years)</label>
+      <input type="range" id="tenure" min="1" max="30" value="10" oninput="updateTenure(this.value)" style="width:100%; accent-color: var(--blue-mid);"/>
+      <div style="display: flex; justify-content: space-between; font-size: 13px; color: var(--text-light); margin-top: 4px;">
+        <span>1 Year</span><span id="tenureLabel" style="color: var(--blue-mid); font-weight: 600;">10 Years</span><span>30 Years</span>
+      </div>
+    </div>
+    <div id="emiResult" style="display: none; margin-top: 24px; background: var(--blue-deep); border-radius: var(--radius-md); padding: 24px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; text-align: center;">
+      <div>
+        <div style="font-size: 12px; color: rgba(255,255,255,0.6); letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 6px;">Monthly EMI</div>
+        <div style="font-family: var(--font-display); font-size: 28px; font-weight: 700; color: white;" id="emiVal">—</div>
+      </div>
+      <div>
+        <div style="font-size: 12px; color: rgba(255,255,255,0.6); letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 6px;">Total Interest</div>
+        <div style="font-family: var(--font-display); font-size: 28px; font-weight: 700; color: var(--blue-pale);" id="intVal">—</div>
+      </div>
+      <div>
+        <div style="font-size: 12px; color: rgba(255,255,255,0.6); letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 6px;">Total Amount</div>
+        <div style="font-family: var(--font-display); font-size: 28px; font-weight: 700; color: var(--blue-pale);" id="totalVal">—</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EMI Table -->
+  <h4 style="font-family: var(--font-display); font-size: 24px; color: var(--blue-deep); margin-bottom: 20px; text-align: center;">Sample EMI Reference Table</h4>
+  <div class="emi-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Loan Amount</th>
+          <th>Interest Rate</th>
+          <th>Tenure</th>
+          <th>Monthly EMI</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>₹10 Lakh</td><td>9% p.a.</td><td>5 Years</td><td style="font-weight: 600; color: var(--blue-deep);">₹20,758</td></tr>
+        <tr><td>₹25 Lakh</td><td>8.5% p.a.</td><td>10 Years</td><td style="font-weight: 600; color: var(--blue-deep);">₹31,018</td></tr>
+        <tr><td>₹50 Lakh</td><td>8.4% p.a.</td><td>20 Years</td><td style="font-weight: 600; color: var(--blue-deep);">₹43,391</td></tr>
+        <tr><td>₹1 Crore</td><td>8.4% p.a.</td><td>25 Years</td><td style="font-weight: 600; color: var(--blue-deep);">₹79,735</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size: 12px; color: var(--text-light); text-align: center; margin-top: 12px;">
+    Note: EMI figures are indicative. Actual EMI may vary based on lender terms, processing fees, and applicable charges.
+  </p>
+</section>
+
+<!-- HOW IT WORKS -->
+<section style="background: var(--surface);">
+  <div class="section-header-center">
+    <span class="section-label">Loan Process</span>
+    <h2 class="section-title">Apply for a Loan in 4 Simple Steps</h2>
+    <p class="section-sub">Our streamlined process ensures you get your loan approved and disbursed with minimum hassle and maximum speed.</p>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;">
+    <div class="step">
+      <div class="step-number">1</div>
+      <h4>Free Consultation</h4>
+      <p>Speak to our loan advisor about your requirement, eligibility, and the best loan options for you.</p>
+    </div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <h4>Documentation</h4>
+      <p>We guide you on exactly which documents are needed — clear, minimal, and straightforward.</p>
+    </div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <h4>Lender Matching</h4>
+      <p>We compare across 250+ lenders to find you the best rate, terms, and approval likelihood.</p>
+    </div>
+    <div class="step">
+      <div class="step-number">4</div>
+      <h4>Disbursement</h4>
+      <p>Once approved, your loan is disbursed directly to your account. Fast, transparent, stress-free.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners-section">
+  <div class="section-header-center">
+    <span class="section-label">Our Network</span>
+    <h2 class="section-title">Our Banking & NBFC Partners</h2>
+    <p class="section-sub">We are associated with India's most trusted banks and financial institutions — giving you access to the widest range of loan options.</p>
+  </div>
+  <div style="margin-bottom: 24px;">
+    <h4 style="font-size: 14px; font-weight: 600; color: var(--text-mid); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Leading Banks</h4>
+    <div class="partners-grid">
+      <span class="partner-tag">State Bank of India</span>
+      <span class="partner-tag">HDFC Bank</span>
+      <span class="partner-tag">ICICI Bank</span>
+      <span class="partner-tag">Axis Bank</span>
+      <span class="partner-tag">Kotak Mahindra Bank</span>
+      <span class="partner-tag">Bank of Baroda</span>
+      <span class="partner-tag">Punjab National Bank</span>
+      <span class="partner-tag">Union Bank</span>
+      <span class="partner-tag">IndusInd Bank</span>
+      <span class="partner-tag">Yes Bank</span>
+      <span class="partner-tag">Federal Bank</span>
+      <span class="partner-tag">& many more</span>
+    </div>
+  </div>
+  <div>
+    <h4 style="font-size: 14px; font-weight: 600; color: var(--text-mid); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">NBFCs & Housing Finance Companies</h4>
+    <div class="partners-grid">
+      <span class="partner-tag">Bajaj Finserv</span>
+      <span class="partner-tag">Tata Capital</span>
+      <span class="partner-tag">L&T Finance</span>
+      <span class="partner-tag">Aditya Birla Finance</span>
+      <span class="partner-tag">HDB Financial Services</span>
+      <span class="partner-tag">Shriram Finance</span>
+      <span class="partner-tag">Muthoot Finance</span>
+      <span class="partner-tag">Piramal Finance</span>
+      <span class="partner-tag">IIFL Finance</span>
+      <span class="partner-tag">PNB Housing Finance</span>
+      <span class="partner-tag">LIC Housing Finance</span>
+      <span class="partner-tag">& more</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div style="position: relative; z-index: 2;">
+    <span class="section-label">Ready to Apply</span>
+    <h2 class="section-title">Ready to Apply for Your Loan?</h2>
+    <p class="section-sub" style="margin-left: auto; margin-right: auto;">"Don't let financial barriers stop you from achieving your goals. We are here to make it happen — fast, easy, and transparent."</p>
+    <div class="cta-buttons">
+      <a href="contact.html" class="btn-white">📞 Call Us Now</a>
+      <a href="contact.html" class="btn-white">📩 Apply Online</a>
+      <a href="contact.html" class="btn-outline-white">💬 WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="brand-name">Dhanshri Financial Solution Pvt. Ltd.</div>
+      <div class="brand-sub">AUTHORISED LOAN DISTRIBUTION PARTNER</div>
+      <p>Associated with leading banks & NBFCs across India. Loan approval is subject to the lender's terms and conditions. We are a facilitator, not a lender.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Loan Products</h5>
+      <ul>
+        <li><a href="#">Home Loan</a></li>
+        <li><a href="#">Loan Against Property</a></li>
+        <li><a href="#">Business Loan</a></li>
+        <li><a href="#">Personal Loan</a></li>
+        <li><a href="#">Car Loan</a></li>
+        <li><a href="#">Education Loan</a></li>
+        <li><a href="#">Balance Transfer</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="investment.html">Investments</a></li>
+        <li><a href="insurance.html">Insurance</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <div class="footer-contact-item"><span class="ci">📍</span> Ahmedabad, Gujarat, India</div>
+      <div class="footer-contact-item"><span class="ci">📞</span> +91 98765 43210</div>
+      <div class="footer-contact-item"><span class="ci">✉️</span> info@dhanshrifinancial.com</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Dhanshri Financial Solution Pvt. Ltd. All Rights Reserved.</p>
+    <p class="disclaimer">Loan approval is subject to lender's terms and conditions. We are a facilitator, not a lender. Interest rates are indicative and subject to change.</p>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 30); });
+  function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
+
+  function updateTenure(v) {
+    document.getElementById('tenureLabel').textContent = v + ' Year' + (v > 1 ? 's' : '');
+    calcEMI();
+  }
+  function formatINR(n) {
+    if (n >= 10000000) return '₹' + (n / 10000000).toFixed(2) + ' Cr';
+    if (n >= 100000) return '₹' + (n / 100000).toFixed(2) + ' L';
+    return '₹' + Math.round(n).toLocaleString('en-IN');
+  }
+  function calcEMI() {
+    const P = parseFloat(document.getElementById('loanAmt').value);
+    const r = parseFloat(document.getElementById('intRate').value) / 12 / 100;
+    const n = parseInt(document.getElementById('tenure').value) * 12;
+    const result = document.getElementById('emiResult');
+    if (!P || !r || !n) { result.style.display = 'none'; return; }
+    const emi = P * r * Math.pow(1+r, n) / (Math.pow(1+r, n) - 1);
+    const totalAmt = emi * n;
+    const totalInt = totalAmt - P;
+    document.getElementById('emiVal').textContent = formatINR(emi);
+    document.getElementById('intVal').textContent = formatINR(totalInt);
+    document.getElementById('totalVal').textContent = formatINR(totalAmt);
+    result.style.display = 'grid';
+  }
+
+  const observer = new IntersectionObserver((e) => { e.forEach(el => { if(el.isIntersecting) { el.target.style.opacity = 1; el.target.style.transform = 'translateY(0)'; } }); }, { threshold: 0.1 });
+  document.querySelectorAll('.card, .why-item, .step').forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(20px)'; el.style.transition = 'opacity 0.5s ease, transform 0.5s ease'; observer.observe(el); });
+</script>
+</body>
+</html>
